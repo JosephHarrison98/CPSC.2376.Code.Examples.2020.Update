@@ -1,3 +1,22 @@
+/*
+Based on my Graph class from the code examples, write a Depth First Search method for the class.
+
+Write a public starter method that passes in the value of the vertex to start at.:
+void DFS(int start);
+Find the starting vertex
+create a visited vector:
+vector<std::shared_ptr<Vertex>> visited;
+call the helper function.
+Write a recursive method that does the heavy lifitng:
+void DFSRecursive(std::shared_ptr<Vertex> start, std::vector<std::shared_ptr<Vertex>>& visited);
+ pushes the starting vertex onto the visited method.
+loops over all items in the adjacency list for the item just pushed.
+If the adjacent vertex is not in the visited vector
+call DFSRecursive passing in the adjacent vertex for start...
+Just before the closing } output the value of the start vertex
+*/
+
+
 #include <iostream>
 #include "Graph.h"
 using namespace std;
@@ -20,3 +39,8 @@ int main()
 	system("PAUSE");
 	return 0;
 }
+
+
+
+
+
